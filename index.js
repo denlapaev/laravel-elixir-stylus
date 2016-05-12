@@ -5,6 +5,16 @@ var compile = require('laravel-elixir/tasks/shared/Css');
 
 var config = Elixir.config;
 
+config.css.stylus = {
+    folder: 'stylus',
+
+    pluginOptions: {
+        use: [
+            postStylus(['lost'])
+        ]
+    }
+};
+
 
 /*
  |----------------------------------------------------------------
@@ -18,16 +28,6 @@ var config = Elixir.config;
  */
 
 Elixir.extend('stylus', function(src, output, options) {
-    config.css.stylus = {
-        folder: 'stylus',
-
-        pluginOptions: {
-            use: [
-                postStylus(['lost'])
-            ]
-        }
-    };
-
     new Elixir.Task('stylus', function() {
         var paths = prepGulpPaths(src, output);
 
