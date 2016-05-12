@@ -14,13 +14,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/JeffreyWay/laravel-elixir-stylus"
+    "url": "https://github.com/denlapaev/laravel-elixir-stylus"
   },
   "author": "Jeffrey Way",
   "license": "MIT",
-  "homepage": "https://github.com/JeffreyWay/laravel-elixir-stylus",
+  "homepage": "https://github.com/denlapaev/laravel-elixir-stylus",
   "bugs": {
-    "url": "https://github.com/JeffreyWay/laravel-elixir-stylus/issues"
+    "url": "https://github.com/denlapaev/laravel-elixir-stylus/issues"
   },
   "dependencies": {
     "gulp-stylus": "^2.0.6",
